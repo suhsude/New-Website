@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html> <!-- Opening Tag -->
+	<head>
+		<title>
+			This is my 5th website.
+			</title>
+			<style>
+				body {
+					background-color:
+						blue;
+						color: black;
+				}
+				.clear-class {
+					clear: both;
+				}
+				.first-class {
+					height: 300px;
+					background-color:darkblue;
+				}
+				.first-class p{
+					color: black;
+				}
+				.first-box {
+					height:200px;
+					width:200px;
+					background-color: blue;
+					margin:0 auto;
+				}
+				.first-box:hover {
+					background-color: red;
+				}
+				.second-class {
+					
+					background-color:darkblue;
+				}
+				.second-class p{
+					color: black;
+				}
+				.third-class {
+					background-color:darkblue;
+				}
+				.third-class p{
+					color: black;
+				}
+				.d-none{
+					display: none;
+				}
+				nav ul li {
+					display:inline-block;
+					padding: 15px;
+				}
+
+				nav a img {
+					float: left;
+				}
+
+			</style>
+		
+			<script>
+				function myFunction(){
+					var box = document.querySelector('.first-box');
+					box.classList.remove('d-none');
+
+					var button = document.querySelector('#first-button');
+					button.classList.add('d-none');
+
+			}
+
+			function evolution() {
+				var image = document.querySelector('.second-class img');
+				image.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxQIjE1Cv8hckDE4Wl4NKicKPDJqYtOVNn3wHS_1vIxSAL0p0N";
+
+				}
+
+
+				function deevolve() {
+					var image = document.querySelector('.second-class img');
+					image.src = "http://static.pokemonpets.com/images/monsters-images-300-300/148-Dragonair.png";
+
+			}
+			</script>
+		</head>
+
+		<header>
+			<nav>
+				<a href="d"><img src="https://i.ytimg.com/vi/B3Zq1Ug61ok/maxresdefault.jpg">
+				</a>
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Blog</a></li>
+					<li><a href="#">Contact Us</a></li>
+				</ul>
+			</nav>
+		</header>
+
+
+		<body>
+		<section class="clear-class">
+			<h1>This is my 5th website.</h1>
+		</section>
+		<section class="first-class">
+			<p style="text-align:center; color:
+			black; ">This is the first class.
+			</p>
+
+			<iframe  src="game/index.html"></iframe>
+
+			<div class="first-box d-none"></div>
+
+			<button id="first-button" onclick="myFunction()">Dont Click Me!</button>
+		</section>
+
+		<section class="second-class">
+			<p style="text-align:center; color:
+			black; ">This is the second class.</p>
+
+			<img height="400" width="400" src="http://static.pokemonpets.com/images/monsters-images-300-300/148-Dragonair.png">
+
+			<button id="second-button" onclick="evolution()">Evolve </button>
+			<button id="third-button" onclick="deevolve()">Deevolve</button>
+			</section>
+
+		<section class="third-class">
+			<p style="text-align:center; color:
+			black; ">This is the third class.</p>
+			<iframe width="560" height="315" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		</section>
+	<footer>
+		<nav>
+			<ul>
+				<li><a href='#'>Home</a></li>
+				<li><a href='#'>Blog</a></li>
+				<li><a href='#'>Contact Us</a></li>
+			</ul>
+		</nav>
+	</footer>	
+
+	</body>
+
+
+</html>
